@@ -30,7 +30,7 @@ create table Auto (
     id_performance serial,
     fuel varchar(50),
     year int,
-    milage varchar(50),
+    milage double precision,
     price numeric(12,2),
     description varchar(1000),
     news boolean,

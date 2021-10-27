@@ -33,10 +33,14 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	/*implementation 'org.flywaydb:flyway-core'
-	compileOnly 'org.projectlombok:lombok'*/
+	implementation 'org.flywaydb:flyway-core'
+	implementation group: 'org.hibernate', name: 'hibernate-validator', version: '7.0.1.Final'
+	compileOnly "org.mapstruct:mapstruct:1.4.2.Final"
+	implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+	annotationProcessor "org.mapstruct:mapstruct-processor:1.4.2.Final"
+	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
-	/*annotationProcessor 'org.projectlombok:lombok'*/
+	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
 }
